@@ -32,10 +32,10 @@ export const Bitcoin = ()=>{
         atlDate: "Jul 06, 2013 (over 9 years)",
       };
     return(
-        <div>
+        <div className="min-h-screen flex items-center justify-center bg-[#DEDFE2]">
             {/* <Navbar/> */}
-            <GetStartedCard/>
-            {/* <TrendingCoins/> */}
+            {/* <GetStartedCard/> */}
+            <TrendingCoins/>
             <div className="min-h-screen bg-[#DEDFE2] flex flex-col items-center p-6 space-y-6">
       <PerformanceBar {...performanceData} />
       <Fundamentals data={fundamentalsData} />
