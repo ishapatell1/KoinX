@@ -2,12 +2,11 @@ import React from "react";
 
 export const GetStartedCard = () => {
   return (
-    <div className="bg-[#0052FE] text-white p-6 rounded-lg shadow-lg text-center fixed w-md h-[515px]">
-         {/* <div className="w-[426px] h-[515px] bg-[#0052FE] rounded-[8px] p-[31px] pt-[31px] pr-[16px] pb-[31px] pl-[16px] gap-[19px] m-6"> */}
+    <div className="bg-[#0052FE] text-white p-6 rounded-lg shadow-lg text-center w-full max-w-md md:max-w-lg lg:max-w-xl h-auto md:h-[515px] mx-auto">
+          {/* <div className="w-[426px] h-[515px] bg-[#0052FE] rounded-[8px] p-[31px] pt-[31px] pr-[16px] pb-[31px] pl-[16px] gap-[19px] m-6">  */}
 
-
-      <p className="text-2xl font-bold mb-2">Get Started with KoinX for FREE</p>
-      <p className="text-sm mb-4 text-[#F2F2F2]">
+         <p className="text-xl md:text-2xl font-bold mb-4">Get Started with KoinX for FREE</p>
+      <p className="text-sm md:text-base mb-6 text-[#F2F2F2] leading-relaxed">
         With our range of features that you can equip for free, KoinX allows you to be more educated
         and aware of your tax reports.
       </p>

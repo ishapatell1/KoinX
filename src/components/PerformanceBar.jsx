@@ -6,7 +6,9 @@ export const PerformanceBar = ({ low, high, current, low52w, high52w }) => {
 
   return (
     <div className="bg-white p-6 rounded-lg shadow-md mb-6">
+        <div>
       <h2 className="text-xl font-bold mb-4">Performance</h2>
+      </div>
 
       <div className="flex justify-between text-sm text-gray-600 mb-1">
         <span>Today's Low<br />{low}</span>
@@ -23,6 +25,9 @@ export const PerformanceBar = ({ low, high, current, low52w, high52w }) => {
       <div className="flex justify-between text-sm text-gray-600">
         <span>52W Low<br />{low52w}</span>
         <span>52W High<br />{high52w}</span>
+        <div>
+            <h2>Fundamentals</h2>
+        </div>
       </div>
     </div>
   );
