@@ -1,8 +1,10 @@
-import { Chart } from "../components/Chart"
+
 import { GetStartedCard } from "../components/GetStartedCard"
+import HomePage from "./HomePage"
 import { Navbar } from "../components/NavBar"
 import { TrendingCoins } from "../components/TrendingCoins"
 import { PerformanceBar } from "../components/PerformanceBar"
+import { Sentiment } from "../components/Sentiment"
 
 export const Bitcoin = ()=>{
     const performanceData = {
@@ -15,13 +17,21 @@ export const Bitcoin = ()=>{
     
     
     return(
-        <div className="min-h-screen flex flex-wrap items-center justify-center bg-[#DEDFE2]">
+      <div className="w-screen h-full overflow-y-auto overflow-x-hidden bg-[#DEDFE2]">
             <Navbar/>
-            <PerformanceBar {...performanceData} />
+
+            <div className="flex items-start">
+              <p className="mt-[6rem] mb-[2rem] ml-[3rem] text-[#3E5765]">Cryptocurrencies <span className="text-black">{`>> Bitcoin`}</span></p>
+            </div>
+            
+            <HomePage/>
+          
+              {/* <GetStartedCard/> */}
+            {/* <PerformanceBar {...performanceData} />
             <div className="min-h-screen bg-[#DEDFE2] items-center p-6 space-y-6">
               <GetStartedCard/>
               <TrendingCoins/>
-            </div>
+            </div> */}
         </div>
     )
 }

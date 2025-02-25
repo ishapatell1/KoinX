@@ -5,13 +5,16 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white border-b border-gray-200 fixed w-full z-20 top-0 left-0 shadow-md">
-      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav className="bg-white border-b border-gray-200 fixed w-screen z-10 top-0 left-0 shadow-md">
+      <div className="w-screen overflow-x-hidden flex flex-wrap items-center  ml-[2.5rem] mr-[2.5rem] p-4">
         
         {/* Logo */}
-        <Link to="/" className="flex items-center">
-          <img src="/koinXlogo.svg" className="h-8" alt="KoinX Logo" />
-        </Link>
+        <div>
+            <Link to="/" className="flex items-center">
+                 <img src="/koinXlogo.svg" className="h-8" alt="KoinX Logo" />
+            </Link>
+        </div>
+        
 
         {/* Hamburger Menu for Mobile */}
         <button
@@ -44,7 +47,7 @@ export const Navbar = () => {
         </button>
 
         {/* Navigation Links */}
-        <div className={`w-full md:flex md:items-center md:w-auto ${isOpen ? "block" : "hidden"}`}>
+        <div className={`w-full flex justify-end  md:flex md:items-center md:w-auto ${isOpen ? "block" : "hidden"}`}>
           <ul className="flex flex-col md:flex-row md:space-x-8 mt-4 md:mt-0 font-medium">
             <li>
               <Link
@@ -57,7 +60,7 @@ export const Navbar = () => {
             <li>
               <Link
                 to="/free-tools"
-                className="block py-2 px-3 text-base hover:text-blue-700  text-[#3E424A]-600"
+                className="block py-2 px-4 text-base hover:text-blue-700  text-[#3E424A]-600"
               >
                 Free Tools
               </Link>
@@ -73,10 +76,12 @@ export const Navbar = () => {
           </ul>
 
           {/* Get Started Button */}
-          <button className="bg-gradient-to-r from-[#2870EA] to-[#1B4AEF] text-white px-4 py-2 rounded-lg mt-4 md:mt-0 font-semibold">
-  Get Started
-</button>
+          <button className="bg-gradient-to-r from-[#2870EA] to-[#1B4AEF] text-white px-4 py-2 rounded-lg mt-4 mr- 4 md:mt-0 font-semibold">
+                Get Started
+          </button>
+          
         </div>
+
       </div>
     </nav>
   );
