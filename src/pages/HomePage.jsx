@@ -3,6 +3,10 @@ import { GetStartedCard } from "../components/GetStartedCard";
 import { BitcoinPriceChart } from "../components/BitcoinPriceChart";
 import { Team } from "../components/Team";
 import { AboutBitcoin } from "../components/AboutBitcoin";
+import { Sentiment } from "../components/Sentiment";
+import Tokenomics from "../components/Tokenomics";
+import { PerformanceBar } from "../components/PerformanceBar";
+import { RecommendationCharts } from "../components/RecommendationCharts";
 
 const TABS = ["Overview", "Fundamentals", "News Insights", "Sentiments", "Team", "Technicals", "Tokenomics"];
 
@@ -14,9 +18,9 @@ const HomePage = () => {
       {/* Left Section (Chart & Tabs) */}
       <div className="w-full md:w-[60%]">
         <BitcoinPriceChart />
-
-        {/* Tabs Navigation */}
-        <div className="flex border-b mt-4 space-x-6 text-gray-600">
+        <div className="flex flex-col">
+        
+          <div className="flex flex-row border-b mt-4 space-x-6 text-gray-600">
           {TABS.map((tab) => (
             <span
               key={tab}
@@ -25,8 +29,15 @@ const HomePage = () => {
             >
               {tab}
             </span>
-          ))}
-        
+          ))} 
+         </div> 
+         <PerformanceBar/>
+          <Sentiment/>
+          <AboutBitcoin/>
+          <Tokenomics/>
+          <Team/>
+          <RecommendationCharts/>
+          
         </div>
       </div>
       {/* Right Section (Get Started Card) */}

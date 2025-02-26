@@ -34,8 +34,10 @@
 //   )
 // }
 
-import React from "react";
+
+
 import { Line } from "react-chartjs-2";
+import TradingViewWidget from "../components/Widget"
 import {
   Chart as ChartJS,
   LineElement,
@@ -83,7 +85,7 @@ export const BitcoinPriceChart = () => {
   };
 
   return (
-    <div className="bg-white p-4 rounded-lg shadow-lg w-full max-w-[820px]">
+    <div className="bg-white p-4 rounded-lg shadow-lg w-full max-w-[920px]">
       {/* Container for heading and chart */}
       <div className="flex flex-col gap-[2rem]">
         {/* Heading Section */}
@@ -109,8 +111,9 @@ export const BitcoinPriceChart = () => {
 
       {/* Chart Section */}
       <div className="h-64 mt-4">
-        <Line data={data} options={options} />
+      <TradingViewWidget/>
       </div>
     </div>
   );
 };
+

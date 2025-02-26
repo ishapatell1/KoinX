@@ -16,16 +16,16 @@ export const TrendingCoins = () => {
         { name: "Polygon", symbol: "MATIC", icon: "🟤", change: "+4.32%" },
       ];
   return (
-    <div className="w-full max-w-[426px] bg-white p-4 rounded-lg shadow-md">
+    <div className="w-full max-w-[27rem] bg-white p-4 rounded-lg shadow-md">
     {/* Heading */}
-    <h2 className="text-[#0F1629] text-[24px] font-semibold leading-[28.8px]">
+    <h2 className="text-[#0F1629] text-[1.5rem] font-semibold leading-[28.8px]">
       Trending Coins (24h)
     </h2>
 
     {/* Coin List */}
     <ul className="mt-4 space-y-4">
       {trendingCoins.map((coin) => (
-        <li key={coin.symbol} className="flex justify-between items-center">
+        <li key={coin.symbol} className="flex justify-between items-center w-[24rem]">
           <div className="flex items-center gap-2">
             <span className="text-l-500">{coin.icon}</span>
             <span className="text-[#0F1629]
