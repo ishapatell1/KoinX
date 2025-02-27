@@ -14,7 +14,7 @@ export const TrendingCoins = () => {
         name: coin.item.name,
         symbol: coin.item.symbol.toUpperCase(),
         icon: coin.item.thumb, // CoinGecko provides a 'thumb' image URL
-        change: "+--%", 
+        change: "5%", 
       }));
 
       setTrendingCoins(topTrending);

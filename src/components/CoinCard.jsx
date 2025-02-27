@@ -1,6 +1,7 @@
 import React from "react";
 
 export const CoinCard = ({ coin }) => {
+  console.log(coin)
   return (
     <div className="bg-white p-4 rounded-lg shadow-md min-w-[12rem]">
       <div className="flex items-center gap-2">
