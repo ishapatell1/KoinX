@@ -1,4 +1,5 @@
 export const CoinCard = ({ coin }) => {
+    const url = "https://api.coingecko.com/api/v3/search/trending"
   if (!coin) return null;
 
   const { image, name, symbol, price, change, sparkline } = coin;

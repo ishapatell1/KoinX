@@ -18,19 +18,20 @@ const HomePage = () => {
       {/* Left Section (Chart & Tabs) */}
       <div className="w-full md:w-[60%]">
         <BitcoinPriceChart />
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-[2rem]">
         
-          <div className="flex flex-row border-b mt-4 space-x-6 text-gray-600">
+          <div className="flex flex-row border-b-[#D3E0E6] mt-4 space-x-6 text-[#3E424A]-500 h-[3rem] w-[55rem]">
           {TABS.map((tab) => (
             <span
               key={tab}
-              className={`cursor-pointer pb-2 ${activeTab === tab ? "text-blue-600 font-semibold border-b-2 border-blue-600" : "hover:text-gray-800"}`}
+              className={`cursor-pointer pb-2 ${activeTab === tab ? "text-blue-600 font-semibold border-b-2 border-[#D3E0E6]-600" : "hover:text-gray-800"}`}
               onClick={() => setActiveTab(tab)}
             >
               {tab}
             </span>
           ))} 
          </div> 
+         
          <PerformanceBar/>
           <Sentiment/>
           <AboutBitcoin/>
