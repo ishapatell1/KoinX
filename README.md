@@ -1,4 +1,4 @@
-# **KoinX - Frontend Intern Assignment**
+# **KoinX**
 
 ## **Overview**
 This project is a frontend implementation of a cryptocurrency dashboard based on the provided **Figma design**. The assignment involves fetching real-time cryptocurrency data using **Coingecko API**, embedding **TradingView charts**, and ensuring a **responsive UI** using **React.js + Tailwind CSS**.
